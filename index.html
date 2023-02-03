@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- GSAP -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    >
+    </script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bora Code | 5</title>
+  </head>
+  <body>
+    <main>
+      <section id="calc">
+        <div class="panel">
+          <input type="text" disabled class="previewCalc">
+          <div class="resultCalc">
+            <span><img src="assets/img/EqualsTop.svg" alt="Igual"></span>
+            <input type="text" disabled class="result">
+          </div>
+        </div>
+        <div class="components">
+          <button class="button" onclick="del()">CE</button>
+          <button class="button" onclick="clr()">C</button>
+          <button class="button" onclick="calculate('%')"><img src="assets/img/Percent.svg" alt="Porcentagem"></button>
+          <button class="button btnSecondary" onclick="calculate('/')"><img src="assets/img/Divide.svg" alt="Divisão"></button>
+          <button class="button number" onclick="calculate(7)">7</button>
+          <button class="button number" onclick="calculate(8)">8</button>
+          <button class="button number" onclick="calculate(9)">9</button>
+          <button class="button btnSecondary" onclick="calculate('*')"><img src="assets/img/X.svg" alt="Multiplicação"></button>
+          <button class="button number" onclick="calculate(4)">4</button>
+          <button class="button number" onclick="calculate(5)">5</button>
+          <button class="button number" onclick="calculate(6)">6</button>
+          <button class="button btnSecondary" onclick="calculate('-')"><img src="assets/img/Minus.svg" alt="Menos"></button>
+          <button class="button number" onclick="calculate(1)">1</button>
+          <button class="button number" onclick="calculate(2)">2</button>
+          <button class="button number" onclick="calculate(3)">3</button>
+          <button class="button btnSecondary" onclick="calculate('+')"><img src="assets/img/Plus.svg" alt="Multiplicação"></button>
+          <button class="button" onclick="round()"><img src="assets/img/PlusMinus.svg" alt="Mais ou menos"></button>
+          <button class="button number" onclick="calculate(0)">0</button>
+          <button class="button" onclick="calculate('.')">,</button>
+          <button class="button btnSecondary" onclick="result()"><img src="assets/img/Equals.svg" alt="Igual"></button>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
